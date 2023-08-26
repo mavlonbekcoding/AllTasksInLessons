@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PrimeNumberSorting
+namespace N22_HT1
 {
     class Program
     {

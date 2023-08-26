@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace N23_HT2
+namespace N24_HT1
 {
-    internal class User
+    internal interface IUserService
     {
+
     }
 }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace N23_HT2
+namespace N30_T3
 {
-    internal class User
+    public class Product
     {
+        public
     }
 }

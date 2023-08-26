@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace N23_HT2
+namespace N32_T1
 {
-    internal class User
+    public class Location
     {
+        public int id { get; set; }
+        public string lacation_name { get; set; }
     }
 }

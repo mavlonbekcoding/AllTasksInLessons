@@ -18,10 +18,10 @@ namespace N29_HT2
                 LastName = lastName
             };
 
-            await SendConfirmationEmail(employee, "sultonbek.rakhimov.recovery@gmail.com", "mavlonbekcoding@gmail.com");
+            await SendConfirmationEmail(employee, "sultonbek.rakhimov.recovery@gmail.com", "yunusbekahmedov62@gmail.com");
             CreateEmploymentContract(employee);
-            await SendWelcomeEmail(employee, "sultonbek.rakhimov.recovery@gmail.com", "mavlonbekcoding@gmail.com");
-            SendOfficePoliciesEmail(employee, "sultonbek.rakhimov.recovery@gmail.com", "mavlonbekcoding@gmail.com");
+            await SendWelcomeEmail(employee, "sultonbek.rakhimov.recovery@gmail.com", "yunusbekahmedov62@gmail.com");
+            SendOfficePoliciesEmail(employee, "sultonbek.rakhimov.recovery@gmail.com", "yunusbekahmedov62@gmail.com");
         }
 
         private async Task SendConfirmationEmail(Employee employee, string fromEmail, string toEmail)
