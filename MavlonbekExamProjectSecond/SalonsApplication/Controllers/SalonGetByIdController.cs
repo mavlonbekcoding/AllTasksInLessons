@@ -7,12 +7,11 @@ namespace SalonsApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SalonsGetByIdController : ControllerBase
+    public class SalonGetByIdController : ControllerBase
     {
         private readonly ISalonService _salonService;
         private Salon salon;
-
-        public SalonsGetByIdController(ISalonService salonService)
+        public SalonGetByIdController(ISalonService salonService)
         {
             _salonService = salonService;
         }

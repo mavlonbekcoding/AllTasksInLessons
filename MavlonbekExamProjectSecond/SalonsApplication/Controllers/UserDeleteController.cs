@@ -1,4 +1,5 @@
 ﻿using MavlonbekExamProjectSecond.Domain.Entities.Salons;
+using MavlonbekExamProjectSecond.Domain.Entities.Users;
 using MavlonbekExamProjectSecond.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,18 +8,18 @@ namespace SalonsApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SalonDeleteController : ControllerBase
+    public class UserDeleteController : ControllerBase
     {
-        private readonly ISalonService _salonService;
-        private Salon salon;
-        public SalonDeleteController(ISalonService salonService)
+        private readonly IUserService _userService;
+        private User user;
+        public UserDeleteController(IUserService userService)
         {
-            _salonService = salonService;
+            _userService = userService;
         }
         [HttpDelete()]
         public bool Delete(long Id)
         {
-            _salonService.Delete(Id);
+            _userService.Delete(Id);
             return true;
         }
     }

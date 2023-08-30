@@ -7,19 +7,20 @@ namespace SalonsApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SalonDeleteController : ControllerBase
+    public class SalonUpdateController : ControllerBase
     {
         private readonly ISalonService _salonService;
         private Salon salon;
-        public SalonDeleteController(ISalonService salonService)
+
+        public SalonUpdateController(ISalonService salonService)
         {
             _salonService = salonService;
         }
-        [HttpDelete()]
-        public bool Delete(long Id)
+        [HttpPost()]
+        public Salon Update(Salon salon)
         {
-            _salonService.Delete(Id);
-            return true;
+            _salonService.Update(salon);
+            return salon;
         }
     }
 }

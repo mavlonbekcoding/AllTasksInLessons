@@ -1,1 +1,26 @@
-﻿
+[
+  {
+    "UserId": 0,
+    "SalonName": "string",
+    "SalonPhoneNumber": "string",
+    "CreateAt": "2023-08-30T20:38:50.942Z",
+    "UpdateAt": "2023-08-30T20:38:50.942Z",
+    "Id": 1
+  },
+  {
+    "UserId": 0,
+    "SalonName": "mavlonbek",
+    "SalonPhoneNumber": "isroilov",
+    "CreateAt": "2023-08-30T20:38:50.942Z",
+    "UpdateAt": "2023-08-30T20:38:50.942Z",
+    "Id": 1
+  },
+  {
+    "UserId": 10,
+    "SalonName": "mavlonbek",
+    "SalonPhoneNumber": "isroilov",
+    "CreateAt": "2023-08-30T20:38:50.942Z",
+    "UpdateAt": "2023-08-30T20:38:50.942Z",
+    "Id": 1
+  }
+]

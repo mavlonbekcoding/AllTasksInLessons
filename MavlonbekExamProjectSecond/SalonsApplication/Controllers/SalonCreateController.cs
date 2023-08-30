@@ -7,10 +7,10 @@ namespace SalonsApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SalonAddController : ControllerBase
+    public class SalonCreateController : ControllerBase
     {
         private readonly ISalonService _salonService;
-        public SalonAddController(ISalonService salonService)
+        public SalonCreateController(ISalonService salonService)
         {
             _salonService = salonService;
         }

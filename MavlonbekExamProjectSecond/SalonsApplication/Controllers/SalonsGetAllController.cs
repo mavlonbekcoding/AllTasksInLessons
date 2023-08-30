@@ -7,19 +7,19 @@ namespace SalonsApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SalonDeleteController : ControllerBase
+    public class SalonsGetAllController : ControllerBase
     {
         private readonly ISalonService _salonService;
-        private Salon salon;
-        public SalonDeleteController(ISalonService salonService)
+        IEnumerable<Salon> salons;
+        public SalonsGetAllController(ISalonService salonService)
         {
             _salonService = salonService;
         }
-        [HttpDelete()]
-        public bool Delete(long Id)
+        [HttpGet()]
+        public Salon GetBySalonId()
         {
-            _salonService.Delete(Id);
-            return true;
+            _salonService.GetAll();
+            return (Salon)salons;
         }
     }
 }

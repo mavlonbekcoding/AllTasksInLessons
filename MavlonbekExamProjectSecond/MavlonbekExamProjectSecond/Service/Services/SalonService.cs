@@ -49,18 +49,11 @@ namespace MavlonbekExamProjectSecond.Service.Services
 
             List<Salon> salons = JsonConvert.DeserializeObject<List<Salon>>(source);
 
-            string salonId = File.ReadAllText(PathFile.SALON_PATH);
-
-            if (string.IsNullOrEmpty(salonId))
-                salonId = "1";
+            string salonId = (salons.Count == 0) ? "1" : salons.LastOrDefault().Id.ToString();
             salon.Id = long.Parse(salonId);
             salons.Add(salon);
             source = JsonConvert.SerializeObject(salons, Formatting.Indented);
             File.WriteAllText(PathFile.SALON_PATH, source);
-            if (salons.Count == 0)
-                salon.Id = 0;
-            else
-                salon.Id = salons.LastOrDefault().Id + 1;
             return new Response<Salon>()
             {
                 StatusCode = 200,
@@ -68,6 +61,7 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 Data = salon
             };
         }
+
 
         public Response<bool> Delete(long Id)
         {
@@ -88,7 +82,7 @@ namespace MavlonbekExamProjectSecond.Service.Services
             salons.Remove(existSalon);
 
             string source1 = JsonConvert.SerializeObject(existSalon, Formatting.Indented);
-            File.WriteAllText(PathFile.SALON_PATH, source1);
+            File.WriteAllText(PathFile.SALON_PATH, source);
 
             return new Response<bool>()
             {
@@ -102,9 +96,7 @@ namespace MavlonbekExamProjectSecond.Service.Services
         {
             string source = File.ReadAllText(PathFile.SALON_PATH);
             List<Salon> salons = JsonConvert.DeserializeObject<List<Salon>>(source);
-
             Salon existSalon = salons.FirstOrDefault(s => s.Id == salon.Id);
-
             if (existSalon == null)
                 return new Response<Salon>()
                 {
@@ -114,8 +106,6 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 };
             existSalon.SalonName = salon.SalonName;
             existSalon.SalonPhoneNumber = salon.SalonPhoneNumber;
-
-
             string json = JsonConvert.SerializeObject(existSalon, Formatting.Indented);
             File.WriteAllText(PathFile.SALON_PATH, json);
 
@@ -125,11 +115,7 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 Message = "Success",
                 Data = salon
             };
-
-
         }
-
-
         public Response<Salon> GetBySalonId(long Id)
         {
             string source = File.ReadAllText(PathFile.SALON_PATH);
@@ -155,11 +141,6 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 Message = "Succes!",
                 Data = salons
             };
-        }
-
-        public void Delete(Salon salon)
-        {
-            throw new NotImplementedException();
         }
     }
 }
