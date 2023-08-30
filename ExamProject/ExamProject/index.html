@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link href="./index.css" rel="stylesheet" />
+</head>
+<body>
+    <form  id="form1" runat ="server">
+        <section>
+            <img src="Stock/logo.png" class="panel"/>
+        </section>
+        <div class="section-second">
+            <div class="container">
+                <div class="social">
+                    <a href="https://www.facebook.com"><img class="facebook-img" src="./Stock/facebook-icon-new.webp" alt="facebook-icon" /></a>
+                    <a href="https://www.plus.google.com"><img class="google-img" src="./Stock/google-icon.png" alt="google-icon" /></a>
+                </div>
+                <div class="content">
+                    <h2 class="sign-up-content">Sign Up</h2>
+                     <input class="username-input" type="text" id="username" name="username" placeholder="User name"><br>
+                     <input class="password-input" type="password" id="password" name="password" placeholder="User password"><br>
+                    <input class="input-submit" id="Submit1" type="submit" value="submit" />
+
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="your_connection_string" SelectCommand="SELECT * FROM YourTable"></asp:SqlDataSource>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>

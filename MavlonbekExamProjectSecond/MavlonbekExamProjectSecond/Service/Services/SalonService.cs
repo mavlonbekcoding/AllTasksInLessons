@@ -75,13 +75,13 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 return new Response<bool>()
                 {
                     StatusCode = 404,
-                    Message = "This book not fount",
+                    Message = "This salon not found",
                     Data = false
                 };
 
             salons.Remove(existSalon);
 
-            string source1 = JsonConvert.SerializeObject(existSalon, Formatting.Indented);
+            source = JsonConvert.SerializeObject(salons, Formatting.Indented);
             File.WriteAllText(PathFile.SALON_PATH, source);
 
             return new Response<bool>()
@@ -91,6 +91,7 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 Data = true
             };
         }
+
 
         public Response<Salon> Update(Salon salon)
         {
