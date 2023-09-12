@@ -49,7 +49,7 @@ namespace MavlonbekExamProjectSecond.Service.Services
 
             List<Salon> salons = JsonConvert.DeserializeObject<List<Salon>>(source);
 
-            string salonId = (salons.Count == 0) ? "1" : salons.LastOrDefault().Id.ToString();
+            string salonId = (salons.Count == 0) ? "1" : (salons.LastOrDefault().Id + 1).ToString();
             salon.Id = long.Parse(salonId);
             salons.Add(salon);
             source = JsonConvert.SerializeObject(salons, Formatting.Indented);
@@ -142,6 +142,11 @@ namespace MavlonbekExamProjectSecond.Service.Services
                 Message = "Succes!",
                 Data = salons
             };
+        }
+
+        public Response<Salon> GetBySalonId(object id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

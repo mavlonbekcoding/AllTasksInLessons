@@ -1,26 +1,34 @@
 [
   {
     "UserId": 0,
-    "SalonName": "string",
+    "SalonName": "mavlonbek",
     "SalonPhoneNumber": "string",
-    "CreateAt": "2023-08-30T20:38:50.942Z",
-    "UpdateAt": "2023-08-30T20:38:50.942Z",
-    "Id": 1
+    "CreateAt": "2023-08-31T15:13:59.457Z",
+    "UpdateAt": "2023-08-31T15:13:59.457Z",
+    "Id": 2
   },
   {
     "UserId": 0,
-    "SalonName": "mavlonbek",
-    "SalonPhoneNumber": "isroilov",
-    "CreateAt": "2023-08-30T20:38:50.942Z",
-    "UpdateAt": "2023-08-30T20:38:50.942Z",
-    "Id": 1
+    "SalonName": "qwert",
+    "SalonPhoneNumber": "qwert",
+    "CreateAt": "2023-08-31T17:59:01.931Z",
+    "UpdateAt": "2023-08-31T17:59:01.931Z",
+    "Id": 3
   },
   {
-    "UserId": 10,
-    "SalonName": "mavlonbek",
-    "SalonPhoneNumber": "isroilov",
-    "CreateAt": "2023-08-30T20:38:50.942Z",
-    "UpdateAt": "2023-08-30T20:38:50.942Z",
-    "Id": 1
+    "UserId": 3,
+    "SalonName": "asilbek",
+    "SalonPhoneNumber": "qahhorov",
+    "CreateAt": "2023-09-02T09:44:59.011Z",
+    "UpdateAt": "2023-09-02T09:44:59.011Z",
+    "Id": 4
+  },
+  {
+    "UserId": 0,
+    "SalonName": "barone",
+    "SalonPhoneNumber": "91233234",
+    "CreateAt": "2023-09-11T09:21:34.661Z",
+    "UpdateAt": "2023-09-11T09:21:34.661Z",
+    "Id": 5
   }
 ]

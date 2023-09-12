@@ -1,4 +1,5 @@
 ﻿using MavlonbekExamProjectSecond.Domain.Entities.Salons;
+using MavlonbekExamProjectSecond.Service.Helpers;
 using MavlonbekExamProjectSecond.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +17,9 @@ namespace SalonsApplication.Controllers
             _salonService = salonService;
         }
         [HttpGet()]
-        public Salon GetBySalonId(long Id)
+        public Response<Salon> GetBySalonId(long Id)
         {
-            _salonService.GetBySalonId(Id);
-            return salon;
+            return _salonService.GetBySalonId(Id);
         }
     }
 }

@@ -16,5 +16,6 @@ namespace MavlonbekExamProjectSecond.Service.Interfaces
         Response<Salon> GetBySalonId(long Id);
         Response<IEnumerable<Salon>> GetAll();
         Response<bool> Cancellation(long Id, long UserId);
+        Response<Salon> GetBySalonId(object id);
     }
 }

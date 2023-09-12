@@ -1,4 +1,5 @@
 ﻿using MavlonbekExamProjectSecond.Domain.Entities.Salons;
+using MavlonbekExamProjectSecond.Service.Helpers;
 using MavlonbekExamProjectSecond.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,9 @@ namespace SalonsApplication.Controllers
             _salonService = salonService;
         }
         [HttpPost()]
-        public Salon Update(Salon salon)
+        public Response<Salon> Update(Salon salon)
         {
-            _salonService.Update(salon);
-            return salon;
+            return _salonService.Update(salon);
         }
     }
 }

@@ -15,11 +15,10 @@ namespace SalonsApplication.Controllers
         {
             _salonService = salonService;
         }
-        [HttpDelete()]
+        [HttpPost()]
         public bool Delete(long Id)
         {
-            _salonService.Delete(Id);
-            return true;
+            return _salonService.Delete(Id).Data;
         }
     }
 }

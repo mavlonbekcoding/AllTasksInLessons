@@ -5,13 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ISalonService, SalonService>();
-builder.Services.AddScoped<ISalonService, SalonService>();
-builder.Services.AddScoped<ISalonService, SalonService>();
-builder.Services.AddScoped<ISalonService, SalonService>();
-builder.Services.AddScoped<ISalonService, SalonService>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddControllers();
