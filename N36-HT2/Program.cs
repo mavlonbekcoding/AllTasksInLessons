@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Tuple<int, string, string> person = new Tuple<int, string, string>(1, "Steve", "Jobs");
+
+//yoki 
+
+var _ = Tuple.Create(1, "Steve", "Jobs");
