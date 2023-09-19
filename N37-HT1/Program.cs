@@ -6,4 +6,5 @@ var emailService = new EmailService();
 var notificationManagementService = new NotificationManagementService(
     userService, emailTemplateService, emailService);
 
+
 await notificationManagementService.NotifyUsersAsync();
