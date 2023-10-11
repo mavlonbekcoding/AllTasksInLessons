@@ -1,4 +1,6 @@
-﻿namespace N50_HT1.Service.Interfaces;
+﻿using N50_HT1.Data.Model;
+
+namespace N50_HT1.Service.Interfaces;
 public interface IUserService
 {
     User UserCreate(User user);
