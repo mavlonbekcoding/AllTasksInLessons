@@ -3,15 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>N53_HT1</RootNamespace>
+    <RootNamespace>N55_T1</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Event\" />
-    <Folder Include="Service\Interface\" />
-    <Folder Include="Service\Services\" />
-  </ItemGroup>
 
 </Project>
