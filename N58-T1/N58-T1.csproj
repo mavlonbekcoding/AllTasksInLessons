@@ -4,13 +4,11 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>N48_HT1</RootNamespace>
+    <RootNamespace>N58_T1</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Max.FileBaseContext.Context" Version="0.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 

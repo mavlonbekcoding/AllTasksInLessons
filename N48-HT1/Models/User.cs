@@ -1,4 +1,4 @@
-﻿namespace N48_HT1.Model
+﻿namespace N48_HT1.Models
 {
     public class User
     {
